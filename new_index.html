@@ -9,23 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
 
     <title>House Of Equilty</title>
-
-    <script type="text/javascript">
-    	function getJSON() {
-    		var req = new XMLHttpRequest();
-    		req.open("GET","image_pos.json",true);
-    		req.onreadystatechange=function(){
-    			if (req.readyState === 4 && req.status === 200) {
-    				var data = JSON.parse(req.responseText);
-    				var sheet = document.getElementById("wrapper")
-    				for (var i = 0; i < data.slide.length; i++) {
-    					sheet.innerHTML=data.sheet[i].background;
-    				}
-    			}
-    			req.send(null);
-    		}
-    	}
-    </script>
 </head>
 <body>
 	<div class="outer-wrapper">
@@ -41,4 +24,9 @@
         </div>
     </div>
 </body>
+<script type="text/javascript">
+	var myItem = {
+		
+	}
+</script>
 </html>
