@@ -1,0 +1,30 @@
+{
+	"slide":[
+		{
+			"background":"hallway-bg-edit.png",
+			"item":[
+				{
+					"image":"item-1.png",
+					"img_x":"30",
+					"img_y":"10",
+				},
+				{
+					"image":"item-2.png",
+					"img_x":"50",
+					"img_y":"10",
+				},
+				{
+					"image":"item-3.png",
+					"img_x":"70",
+					"img_y":"10",
+				},
+			],
+			"text_box":[
+				{
+					"box":"item-1-text-edit.png"
+				}
+			]
+		},
+	],
+	"name":"nigga"
+}

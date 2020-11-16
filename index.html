@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Json</title>
+	<script>
+		function ajax_getjson() {
+			var hr = new XMLHttpRequest();
+			hr.open("get","image_pos.json");
+			hr.onreadystatechange = function(){
+				if (hr.readyState===4 && hr.status===200) {
+					var data=JSON.parse(hr.responseText);
+					var result=document.getElementById("result");
+					result.innerHTML=data;
+				}
+			}
+			hr.send();
+			document.getElementById('result').innerHTML="request"
+		}
+	</script>
+</head>
+<body>
+	<div id="result"></div>
+	<script>ajax_getjson();</script>
+</body>
+</html>

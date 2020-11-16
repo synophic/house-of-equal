@@ -1,0 +1,510 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    display: flex;
+    flex-direction: row;
+    width: 900vw;
+}
+
+.one {
+    background: rgb(229, 233, 236);
+}
+
+
+/* Page Two */
+
+.two {
+    background-color: rgb(231, 211, 207);
+}
+
+#locker {
+    position: absolute;
+    display: block;
+    margin-left: 5.58%;
+    margin-top: 3.9%;
+    z-index: 102 !important;
+}
+
+#frame {
+    position: absolute;
+    display: block;
+    margin-left: 5.4%;
+    margin-top: 0.82%;
+    z-index: 10 !important;
+}
+
+#hing {
+    position: absolute;
+    display: block;
+    margin-left: 1.85%;
+    margin-top: 0.55%;
+    z-index: 1 !important;
+}
+
+.dropdown1 {
+    position: absolute;
+    display: inline-block;
+    margin-left: 10%;
+    margin-top: 0.25%;
+    z-index: 102 !important;
+}
+
+#myModal {
+    position: absolute;
+    /* display: inline-block; */
+    margin-left: 1%;
+    margin-top: 0.25%;
+    z-index: 102 !important;
+}
+
+.overlay {
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    overflow: auto;
+    /* Enable scroll if needed */
+    margin-left: 11.1% !important;
+    margin-bottom: 10% !important;
+    width: 11.13% !important;
+    height: 100% !important;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    margin-left: 37.5%;
+    margin-top: 3%;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 28% !important;
+    height: 80%;
+}
+
+#locker-item {
+    padding: 10px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Page Three*/
+
+.three {
+    background-image: url(house_of_equality/02-living-room/lvng-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cup {
+    position: absolute;
+    display: block;
+    margin-left: 1.41%;
+    margin-top: 1.1%;
+    z-index: 102 !important;
+}
+
+#tanka {
+    position: absolute;
+    display: block;
+    margin-left: 1.28%;
+    margin-top: 2.13%;
+    z-index: 102 !important;
+}
+
+#book {
+    position: absolute;
+    display: block;
+    margin-left: 6%;
+    margin-top: 4.2%;
+    z-index: 102 !important;
+}
+
+#buffdoll {
+    position: absolute;
+    display: block;
+    margin-left: 8.5%;
+    margin-top: 2.5%;
+    z-index: 102 !important;
+}
+
+.four {
+    background-image: url(house_of_equality/03-kitchen/kitchen-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tachang {
+    position: absolute;
+    display: block;
+    margin-left: 2.2%;
+    margin-top: 2.27%;
+    z-index: 102 !important;
+}
+
+#pancake {
+    position: absolute;
+    display: block;
+    margin-left: 3.5%;
+    margin-top: 2.32%;
+    z-index: 102 !important;
+}
+
+.five {
+    background-image: url(house_of_equality/04-bathroom/bath-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    ;
+}
+
+#razor {
+    position: absolute;
+    display: block;
+    margin-left: 2.45%;
+    margin-top: 1.95%;
+    z-index: 102 !important;
+}
+
+#bucket {
+    position: absolute;
+    display: block;
+    margin-left: 2.7%;
+    margin-top: 3.8%;
+    z-index: 102 !important;
+}
+
+#fuclotus {
+    position: absolute;
+    display: block;
+    margin-left: 7%;
+    margin-top: 1.4%;
+    z-index: 102 !important;
+}
+
+.six {
+    background: lime;
+}
+
+.seven {
+    background: pink;
+}
+
+.eight {
+    background: purple;
+}
+
+.nine {
+    background: cyan;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    /*lock page*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+}
+
+.outer-wrapper {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* .house {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    width: 25%;
+    height: 25%;
+}
+
+.explore {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    width: 25%;
+    height: 25%;
+} */
+
+.bgtwo {
+    background-image: url('hallway-bg-edit.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wrapper-one {
+    display: block;
+    grid-gap: 10px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    animation-name: zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+.a {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.b {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* padding-bottom: 0%; */
+}
+
+.house {
+    width: 25%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    display: block;
+}
+
+.c {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.d {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.dropbtn {
+    background-color: rgb(241, 126, 87);
+    color: white;
+    font-size: 20pt;
+    border: none;
+    cursor: pointer;
+    width: 120%;
+    height: 30%;
+    font-family: 'Kanit', 'Medium', sans-serif;
+    border-radius: 5px;
+    box-shadow: 0px 4px 2px #888888;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 85%;
+    margin-top: 2%;
+}
+
+.dropdown a:hover {
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 300px;
+    overflow: auto;
+    z-index: 1;
+    right: -20px;
+}
+
+.dropdown-content a {
+    color: rgb(45, 83, 121);
+    padding: 3px 5px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Kanit', 'Regular', sans-serif;
+    text-align: right;
+    font-size: 13pt;
+}
+
+.dropdown a:hover {
+    color: rgb(241, 126, 87);
+    font-family: 'Kanit', 'Medium', sans-serif;
+}
+
+.show {
+    display: block;
+}
+
+.explore {
+    width: 15%;
+    height: auto;
+    margin-left: 45%;
+    margin-right: auto;
+    display: block;
+    margin-top: 1%;
+    animation-name: scaling;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+.explore:hover {
+    animation: scaleexplo 1s forwards;
+}
+
+.hint {
+    margin-left: 41.8%;
+    margin-right: auto;
+    display: block;
+    margin-top: 4%;
+    width: 20%;
+    animation-name: MoveUpDown;
+    animation-duration: 5s;
+    animation-iteration-count: forward;
+}
+
+.cloud {
+    margin-left: 40%;
+    margin-right: auto;
+    display: block;
+    margin-top: 7%;
+    width: 70%;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.9;
+    animation-name: C_animation;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+.cloud2 {
+    margin-right: auto;
+    right: 20%;
+    display: block;
+    width: 80%;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    top: 5pt;
+    animation-name: C2_animation;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes C_animation {
+    from {
+        margin-left: 40%;
+        opacity: 0.9;
+    }
+    to {
+        margin-left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes C2_animation {
+    from {
+        right: 20%;
+        opacity: 0.9;
+    }
+    to {
+        right: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes MoveUpDown {
+    from {
+        margin-top: 20%;
+        opacity: 0;
+    }
+    to {
+        margin-top: 4%;
+        opacity: 1;
+    }
+}
+
+@keyframes scaleexplo {
+    from {
+        margin-left: 45%;
+        width: 15%;
+    }
+    to {
+        margin-left: 43%;
+        width: 20%;
+    }
+}

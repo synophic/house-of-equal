@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="new_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+
+    <title>House Of Equilty</title>
+
+    <script type="text/javascript">
+    	function getJSON() {
+    		var req = new XMLHttpRequest();
+    		req.open("GET","image_pos.json",true);
+    		req.onreadystatechange=function(){
+    			if (req.readyState === 4 && req.status === 200) {
+    				var data = JSON.parse(req.responseText);
+    				var sheet = document.getElementById("wrapper")
+    				for (var i = 0; i < data.slide.length; i++) {
+    					sheet.innerHTML=data.sheet[i].background;
+    				}
+    			}
+    			req.send(null);
+    		}
+    	}
+    </script>
+</head>
+<body>
+	<div class="outer-wrapper">
+        <div class="wrapper" id="wrapper">
+        	<div class="slide" style="background-color: #e5e9ec;">
+        		<button class="map_button">MAP</button>
+        		<!--<script>create_map_menu();</script>-->
+        		<img src="house_of_equality/00-home/house.png" class="item" style="width: 30%; height: auto; top: 10%; left: 33%;">
+        		<img src="house_of_equality/00-home/explore.png" class="item explore" style="width: 15%; top: 70%; left: 43%;">
+        		<img src="house_of_equality/00-home/home-hint.png" class="item" style="top: 80%; left: 37%;">
+        	</div>
+        	<script type="text/javascript">getJSON();</script>
+        </div>
+    </div>
+</body>
+</html>
